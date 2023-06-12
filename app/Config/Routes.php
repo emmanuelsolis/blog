@@ -31,7 +31,6 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->group('/', ['namespace' => 'App\Controllers\Front'], function($routes){
     $routes->get('', 'Home::index');
-    $routes->get('/libreria-de-mi-casa', 'Home::sayHola');
 });
 
 

@@ -9,11 +9,7 @@ class Home extends BaseController
 {
     public function index() {
    
-        return view('welcome_message');
+        return view('Front/Home');
     }
 
-    public function sayHola() {
-        $instance = new Codigo ;
-        echo $instance->sayHola();
-    }
 }
