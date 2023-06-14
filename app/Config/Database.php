@@ -12,7 +12,10 @@ class Database extends Config
     /**
      * The directory that holds the Migrations
      * and Seeds directories.
-     */
+     * 
+
+
+
     public string $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
 
     /**
@@ -27,9 +30,9 @@ class Database extends Config
     public array $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'root',
+        'password' => 'atlas100583',
+        'database' => 'blog',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
