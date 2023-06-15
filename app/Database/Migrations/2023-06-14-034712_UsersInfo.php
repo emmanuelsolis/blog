@@ -41,6 +41,7 @@ class UsersInfo extends Migration
             ],
         ]);
         $this->forge->addKey('id_user', true);
+        $this->forge->addForeignKey('id_country','countries','id_country','CASCADE','SET NULL');
         $this->forge->createTable('users_info');
     }
 
